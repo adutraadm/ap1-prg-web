@@ -4,7 +4,7 @@ function adaptImage(targetimg) {
     var wheight = $(window).height(); // altura da janela do navegador
     var wwidth = $(window).width(); // largura da janela do navegador
 
-    // removemos os atributos de largura e altura da imagem
+    // removemos os atributos de largura e altura
     targetimg.removeAttr("width")
     .removeAttr("height")
     .css({ width: "", height: "" }); // removemos possíveis regras css também
