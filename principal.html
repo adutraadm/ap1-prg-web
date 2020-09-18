@@ -5,10 +5,7 @@
 <title>Exemplo</title>
 <style>
 /* reset de margens */
-* {
-	margin: 0;
-	padding:0;
-}
+
 
 .container {
          width: 140vw;
@@ -21,8 +18,7 @@
      .box {
          width: 300px;
          height: 300px;
-		 margin-left:auto;
-         margin-right:auto;
+		 margin:0;
          font-family: cursive;
        
      }
@@ -36,17 +32,18 @@ body, html {
 
 body {
 	background: url(imagem/imagem.jpg) center center no-repeat fixed;
-	
+	margin:0;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	overflow: hidden
 }
 
 #site {
 	width: 560px;
 	padding: 20px;
-	margin: 40px auto;
+	margin:0;
 	background: #FFF; /* fundo branco para navegadores que não suportam rgba */
 	background: rgba(255,255,255,0.8); /* fundo branco com um pouco de transparência */
 }
@@ -88,7 +85,8 @@ a {
 }
 
 .content{
-     margin: 30px;
+     margin: 0;
+	 padding:0;
     }
 .botao01{
      background: -webkit-linear-gradient(bottom, #7CCD7C, #548B54 70%);
@@ -146,7 +144,10 @@ a {
      box-shadow:none;
     }
 
-
+* {
+	margin: 0;
+	padding:0;
+}
 
  
 </style>
@@ -172,7 +173,7 @@ a {
 </div>
 			
 			
-	<div class="container" align="center" >
+	<div class="container"  >
         <div class="box">
 		<h2> Eu sou Usain Bolt </h2>
 		<p><h4>um ex-velocista jamaicano multicampeão</h7></p>
