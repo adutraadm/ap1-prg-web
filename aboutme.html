@@ -5,6 +5,7 @@
 <title>Aboutme</title>
 <style>
 
+
 .container {
          width: 140vw;
          height: 120vh;
@@ -147,7 +148,29 @@ a {
 	padding:0;
 }
 
- 
+#containerz {
+    width: 100%;
+    border-color: blue;
+    text-align: center;
+	align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxz {
+    float: left;
+    margin: 0 auto;
+    width: 10%; /* Valor da Largura */
+	align: center;
+}
+    
+}
+
+#box-1 { background-color: red; }
+#box-2 { background-color: green; }
+#box-3 { background-color: pink; }
 </style>
 
 </head>
@@ -157,7 +180,7 @@ a {
   <nav id="site-navigation" class="main-navigation">
 	<div class="clearfix">
       <ul>
-        <li><a id="itez" href="#"><b>Home</b></a></li>
+        <li><a id="itez" href="./principal.html"><b>Home</b></a></li>
         <li><a href="#"><b>Services</b></a></li>
         <li><a href="#"><b>About</b></a></li>
         <li><a id="itez" href="#"><b><H3>Me.</H3></b></a></li>
@@ -169,8 +192,12 @@ a {
   </div>
 	</nav>
 </div>
-			
-			
+		
+<div id="containerz" align="center">
+    <div id="box-1" class="boxz">1</div>
+    <div id="box-2" class="boxz">2</div>
+    <div id="box-3" class="boxz">3</div>
+</div>			
 
 
 
