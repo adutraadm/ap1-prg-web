@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<title>Aboutme</title>
+<title>Formulario</title>
 <style>
 
 
@@ -38,6 +38,39 @@
   border-left: 1px solid #ccc;
   text-indent: 20px;
 }
+
+.form-contact-input2 {
+  width: 90%;
+  color: #292929;
+  font-size: 18px;
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+}
+
+.form-contact-input3 {
+  width: 180%;
+  color: #292929;
+  font-size: 18px;
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+}
+
 
 .form-contact-textarea {
   width: 100%;
@@ -123,6 +156,12 @@ ul {
 }
 
 li {
+	display: inline-block;
+	font-family: 'Open Sans', serif;
+	font-weight: 300;
+}
+
+#sobrenome {
 	display: inline-block;
 	font-family: 'Open Sans', serif;
 	font-weight: 300;
@@ -236,17 +275,24 @@ a {
 		<p><H1> </h1></p>
 		<p><H1> </h1></p>
 	
-	<header>
- <h4>Tudo Sobre Bolt</h4>
-
+<header>
+<div align="center"><H3>Formulario de contato</H3>
+          <p><H1> </h1></p>
+		 <p><H1> </h1></p>
+</div>
 </header>	
 
 		
 <div class="container">  
   <form action="#" class="form-contact" method="post" tabindex="1">  
-     <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />  
-     <input type="email" class="form-contact-input" name="email" placeholder="Email" required />  
-     <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone" />  
+     <li>
+	 <input type="text" class="form-contact-input2" name="nome" placeholder="Nome" required />
+	 </li>
+	 <li>
+     <input type="text" class="form-contact-input3" name="sobrenome" placeholder="Sobrenome" required />	 
+     </li>
+	 <input type="email" class="form-contact-input" name="email" placeholder="Email" required />  
+     <input type="tel" class="form-contact-input" name="tel" placeholder="Assunto" />  
      <textarea class="form-contact-textarea" name="conteudo" placeholder="Deixe uma mensagem" required></textarea>  
      <button type="submit" class="form-contact-button">Enviar</button>  
   </form>  
